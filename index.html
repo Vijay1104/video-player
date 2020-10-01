@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video Player- Reboot13</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<style type="text/css">
+		body {
+			background-color: #222;
+		}
+
+
+		#driveh {
+			background-color:#e31919;
+			 color:#fff;
+			 margin: 10px; 
+			 padding: 10px; 
+			 border-radius: 5px;
+		}
+		#drivew {
+			background-color:#2196f3; 
+			color:#fff;
+			margin: 10px; 
+			padding: 10px; 
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+<center>
+
+	<!--Web Player-->
+	<h4 id="drivew">Video Player- Reboot13</h4>
+	<div style="margin: 20px; margin-top: 30px;">
+<div class="input-group mb-3">
+    <input type="text" placeholder="url with extension" id="txt_url" class="form-control">
+ <div class="input-group-append">
+    <input type="button" onclick="play()" id="button" value="Get Video" class="btn btn-outline-secondary" style="background-color: #2196f3;color:#fff;">
+    <input type="button" onclick="history.go(0)" id="button" value="Reset" class="btn btn-outline-secondary" style="background-color:#000000;color:#fff;">
+</div>
+             </div>
+<video id="video" class="responsive" width="90%" height="auto"  style="border-color: #fff;" controls>
+    <source  src="" >
+</video>
+
+</div>
+
+<hr>
+
+<!--G Drive Player-->
+<h4 id="driveh">Drive Player- Reboot13</h4>
+<div style="margin: 20px; margin-top: 30px;">
+<div class="input-group mb-3">
+    <input type="text" placeholder=" https://drive.google.com/file/d/{file id}/preview" id="d_url" class="form-control">
+ <div class="input-group-append">
+    <input type="button" onclick="drive()" id="button" value="Get G-Drive" class="btn btn-outline-secondary" style="background-color: #2196f3;color:#fff;">
+     <input type="button" onclick="history.go(0)" id="button" value="Reset" class="btn btn-outline-secondary" style="background-color:#000000;color:#fff;">
+</div>
+             </div>
+</div>
+
+<iframe id="drive" class="responsive" width="90%" height="600px"  class="responsive" style="border-color: #fff;">
+    
+</iframe>
+</div>
+</center>
+
+<script type="text/javascript">
+	
+///web player
+      function play() {
+
+            var url = document.getElementById('txt_url').value;
+   
+                var video = document.getElementById('video');
+                var src = document.createAttribute("src");
+                src.value = url;
+                video.setAttributeNode(src);
+            }
+
+///drive player
+            function drive() {
+
+            var durl = document.getElementById('d_url').value;
+   
+                var iframe = document.getElementById('drive');
+                var src = document.createAttribute("src");
+                src.value = durl;
+                iframe.setAttributeNode(src);
+            }
+
+</script>
+</center>
+
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+
+&nbsp;<br>
+&nbsp;<br>&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+</body>
+</html>
