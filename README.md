@@ -1,4 +1,4 @@
-# video-player
+# Video-player
 
 Java script based Video Player
 
