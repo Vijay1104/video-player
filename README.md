@@ -11,3 +11,9 @@ and passed the value from input to src
 
 Same goes with iframe which work as g-drive player
 ## So every time you enter link in input it will be the src attribute of video tag
+
+
+https://reboot13.com
+
+
+https://telegram.me/reboot13
