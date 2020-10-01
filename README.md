@@ -14,6 +14,9 @@ Same goes with iframe which work as g-drive player
 ## So every time you enter link in input it will be the src attribute of video tag
 
 
+- [x] Web player
+- [x] G-Drive Player
+
 https://reboot13.com
 
 
