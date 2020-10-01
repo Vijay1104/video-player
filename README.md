@@ -6,7 +6,8 @@ Just created a video element gave a Id name
 
 Now using JavaScript
 Created a var and which gets value from input group
-created attribute of video name src 
+
+Created attribute of video name src using javascript
 and passed the value from input to src
 
 Same goes with iframe which work as g-drive player
